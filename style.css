@@ -1,0 +1,112 @@
+*{margin: 0;padding: 0; font-family: 'Rubik', sans-serif;}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to left ,rgb(179, 135, 135) 80%, #c3f5ff 20%) ;
+
+}
+.navsection{
+    width : 100%;
+    height: 20vh;
+    background-color: rgb(170, 170, 128);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:linear-gradient(to top ,rgb(241, 235, 235) 80%, #55e3ff 20%) ;
+
+}
+.logo{
+    width : 40%;
+    color: white;
+    background-image: linear-gradient(#c6cae2 40%, #979599 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: ro 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes ro{
+    from{padding-left: 40px;}
+    from{padding-right: 40px;}
+}
+nav{
+    width: 60%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+nav a:first-child{
+    color: #9798a1;
+
+}
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 110;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #a5aff1;
+    transition: all 0.4s;
+}
+nav a :hoverbefore{
+    width:100%
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside{
+    border-radius: 100% 0% 100% 0% / 0% 100% 0% 100%  ;
+    background: yellow;
+
+}
+.rightside img {
+    max-width: 400px;
+    height: auto;
+}
+.leftside{
+    color: #000;
+    text-transform: uppercase;
+}
+.leftside{
+    margin-top: 20px;
+    font-size: 70px;
+    margin-bottom: 25px;
+
+}
+.leftside h2{
+    margin-bottom: 2px;
+    font-weight: 100;
+    word-spacing: 1px;
+}
+.leftside .btn{
+    text-decoration: none;
+    font-weight: 900;
+    font-style: 14px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-repeat: 5px;
+    display: inline-block;
+    margin-right: 50px;
+    color: #fff;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right , #4458dc 0% , #854fee 100% ), radial-gradient(circle at top left , #4458dc , #854fee);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+}
